@@ -5,7 +5,12 @@ USER root
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
-RUN \
-  # Puppeteer
-  && apk add --no-cache ca-certificates chromium nss freetype harfbuzz ttf-freefont
-  
+RUN apk add --no-cache \
+  ca-certificates=latest \
+  chromium=latest \
+  nss=latest \
+  freetype=latest \
+  harfbuzz=latest \
+  ttf-freefont=latest
+
+USER guest
