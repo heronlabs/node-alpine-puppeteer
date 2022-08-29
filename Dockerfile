@@ -1,7 +1,7 @@
 FROM alpine
 
 # Installs latest Chromium (100) package.
-# hadolint ignore=DL3008,DL3018
+# hadolint ignore=DL3006,DL3018
 RUN apk add --no-cache \
       chromium \
       nss \
