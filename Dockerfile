@@ -15,5 +15,3 @@ RUN apk add --no-cache \
   ttf-freefont
 
 USER guest
-
-ENTRYPOINT ["/bin/sh"]
