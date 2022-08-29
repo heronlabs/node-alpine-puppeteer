@@ -23,5 +23,5 @@ jobs:
         uses: './publish-docker-action/application/github'
         with:
           DOCKER_AUTH_TOKEN: ${{ secrets.DOCKER_TOKEN }}
-          TAG_NAME: "nodapeeter"
+          TAG_NAME: "latest"
           REPO: "lucaslacerdacl/node-alpine-puppeteer"
