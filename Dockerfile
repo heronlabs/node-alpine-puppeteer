@@ -9,7 +9,7 @@ RUN apk add --no-cache \
       ca-certificates \
       ttf-freefont \
       nodejs \
-      nodejs-npm \
+      npm \
       yarn \
       bash
 
