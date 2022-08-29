@@ -16,4 +16,4 @@ RUN apk add --no-cache \
 
 USER guest
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/sh"]
