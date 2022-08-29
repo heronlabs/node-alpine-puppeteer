@@ -1,0 +1,27 @@
+name: Publish Node Alpine Puppeteer
+
+on: 
+  - push
+  - workflow_dispatch
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Checkout action repository
+        uses: actions/checkout@v3
+        with:
+          repository: heronlabs/publish-docker-action
+          ref: main
+          token: ${{ secrets.AUTHOR_PERSONAL_ACCESS}}
+          path: ./publish-docker-action
+
+      - name: Run action
+        uses: './publish-docker-action/application/github'
+        with:
+          DOCKER_AUTH_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+          TAG_NAME: "nodapeeter"
+          REPO: "lucaslacerdacl/node-alpine-puppeteer"
