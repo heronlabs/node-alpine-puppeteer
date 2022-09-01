@@ -13,7 +13,7 @@ RUN apk add --no-cache \
       nodejs \
       npm \
       yarn \
-      bash \
+      bash
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
