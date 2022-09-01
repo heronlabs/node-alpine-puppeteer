@@ -1,5 +1,7 @@
 FROM alpine:3
 
+RUN apk update && apk upgrade
+
 RUN apk add --no-cache \
       chromium=105.0.5195.52-r0 \
       nss=3.82-r0 \
