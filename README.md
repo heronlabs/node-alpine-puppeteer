@@ -5,6 +5,4 @@
 
 # Image for Node from Alpine with Puppeteer
 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/lucaslacerdacl/node-alpine-puppeteer/latest)
-
 > Use this image for Node environment which requires [Puppeteer](https://pptr.dev/)
