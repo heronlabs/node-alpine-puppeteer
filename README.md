@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Build Status](https://github.com/heronlabs/node-alpine-puppeteer/actions/workflows/main.yml/badge.svg?branch=main)
 
-# Image for Node from Alpine with Puppeteer.
+# Image for Node from Alpine with Puppeteer
 
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/lucaslacerdacl/node-alpine-puppeteer/latest)
 
