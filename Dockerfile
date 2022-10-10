@@ -15,4 +15,4 @@ RUN apk add --no-cache \
       bash=5.1.16-r2
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
-    PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+      PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
