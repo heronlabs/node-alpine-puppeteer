@@ -1,7 +1,7 @@
 name: Publish Node Alpine Puppeteer
 
 on: 
-  - push
+  - workflow_dispatch
   
 jobs:
   pipeline:
