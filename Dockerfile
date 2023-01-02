@@ -2,6 +2,9 @@ FROM alpine:3
 
 RUN apk update && apk upgrade
 
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
+      PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+
 # hadolint ignore=DL3018
 RUN apk add --no-cache \
       chromium \
@@ -14,6 +17,3 @@ RUN apk add --no-cache \
       npm \
       yarn \
       bash
-
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
-      PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
