@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: heronlabs/publish-docker-action
-          ref: 2.6.0
+          ref: 3.1.0
           token: ${{ secrets.AUTHOR_PERSONAL_ACCESS}}
           path: ./publish-docker-action
 
@@ -23,5 +23,6 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_AUTH_TOKEN: ${{ secrets.DOCKER_TOKEN }}
           FILE_NAME: Dockerfile
-          TAG_NAME: "node-alpine-puppeteer:1"
+          NAME: "node-alpine-puppeteer"
+          TAG: "latest"
           REPO: "heronlabs/node-alpine-puppeteer"
