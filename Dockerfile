@@ -1,19 +1,13 @@
-FROM alpine:3
+FROM heronlabs/node-alpine:1
 
-RUN apk update && apk upgrade
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
-      PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
-
-# hadolint ignore=DL3018
-RUN apk add --no-cache \
-      chromium \
-      nss \
-      freetype \
-      harfbuzz \
-      ca-certificates \
-      ttf-freefont \
-      nodejs \
-      npm \
-      yarn \
-      bash
+RUN apk update \
+	&& apk upgrade \
+	&& apk add --no-cache \
+	chromium=108.0.5359.125-r1 \
+	nss=3.86-r0 \
+	freetype=2.12.1-r0 \
+	harfbuzz=6.0.0-r0 \
+	ca-certificates=20221203-r1 \
+	ttf-freefont=20120503-r2

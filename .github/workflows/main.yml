@@ -23,5 +23,5 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_AUTH_TOKEN: ${{ secrets.DOCKER_TOKEN }}
           FILE_NAME: Dockerfile
-          TAG_NAME: "node-alpine-puppeteer:latest"
+          TAG_NAME: "node-alpine-puppeteer:1"
           REPO: "heronlabs/node-alpine-puppeteer"
