@@ -9,20 +9,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Checkout action repository
+      - name: '[ACTION] | Clone publish docker action'
         uses: actions/checkout@v3
         with:
           repository: heronlabs/publish-docker-action
-          ref: 3.1.0
+          ref: 4.0.0
           token: ${{ secrets.AUTHOR_PERSONAL_ACCESS}}
           path: ./publish-docker-action
 
-      - name: Run action
+      - name: '[ACTION] | Run publish docker action'
         uses: './publish-docker-action/application/github'
         with:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_AUTH_TOKEN: ${{ secrets.DOCKER_TOKEN }}
           FILE_NAME: Dockerfile
           NAME: "node-alpine-puppeteer"
-          TAG: "1"
+          TAG: "2"
           REPO: "heronlabs/node-alpine-puppeteer"

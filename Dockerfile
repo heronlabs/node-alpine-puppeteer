@@ -1,4 +1,4 @@
-FROM heronlabs/node-alpine:1
+FROM heronlabs/node-alpine:3
 
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
