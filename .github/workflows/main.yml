@@ -1,4 +1,4 @@
-name: Publish Node Alpine Puppeteer
+name: Publish
 
 on: 
   - workflow_dispatch
@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: heronlabs/publish-docker-action
-          ref: 4.0.0
+          ref: 5.0.0
           token: ${{ secrets.AUTHOR_PERSONAL_ACCESS}}
           path: ./publish-docker-action
 
