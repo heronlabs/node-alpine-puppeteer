@@ -7,10 +7,10 @@ jobs:
   pipeline:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: '[ACTION] | Clone publish docker action'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: heronlabs/publish-docker-action
           ref: 5.0.0
